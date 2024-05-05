@@ -1,0 +1,16 @@
+{
+    "name": "alfianizzah/laradi",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Alfianizzah\\Laradi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MuhammadAlfianIzzah",
+            "email": "alfianizzah6@gmail.com"
+        }
+    ],
+    "require": {}
+}
