@@ -1,13 +1,13 @@
 <?php
 
-namespace Alfianizzah\Laradi\Console\Command;
+namespace Alfianizzah\Laradi\Console\Commands;
 
 use Alfianizzah\Laradi\Models\UserModel;
 use Faker\Factory;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Hash;
 
-class ExampleCommand extends Command
+class GenerateUserCommand extends Command
 {
     /**
      * The name and signature of the console command.

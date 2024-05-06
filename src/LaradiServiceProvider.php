@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Providers;
+namespace Alfianizzah\Laradi;
 
+use Alfianizzah\Laradi\Console\Commands\GenerateUserCommand;
 use Illuminate\Support\ServiceProvider;
 
 class LaradiServiceProvider extends ServiceProvider
@@ -19,6 +20,11 @@ class LaradiServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                GenerateUserCommand::class,
+            ]);
+        }
         //
     }
 }
